@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Anniversary ❤️</title>
+  <link rel="icon" href="https://emojiapi.dev/api/v1/2764/32.png" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+  <style>
+    body {
+      background: linear-gradient(to right, #fce4ec, #f8bbd0);
+      font-family: 'Comic Sans MS', cursive;
+      overflow-x: hidden;
+    }
+    .heart {
+      position: absolute;
+      font-size: 24px;
+      animation: fall 10s linear infinite;
+    }
+  </style>
+</head>
+<body class="text-center p-6 relative">
+
+  <!-- Floating Hearts -->
+  <script>
+    for (let i = 0; i < 20; i++) {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.textContent = '❤️';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.top = Math.random() * -100 + 'px';
+      document.body.appendChild(heart);
+      gsap.to(heart, {
+        y: "100vh",
+        rotation: 360,
+        repeat: -1,
+        delay: Math.random() * 5,
+        duration: 10,
+        ease: "linear"
+      });
+    }
+  </script>
+
+  <!-- Navigation -->
+  <nav class="w-full bg-pink-200 py-3 shadow-md fixed top-0 left-0 z-10">
+    <div class="max-w-5xl mx-auto flex justify-between items-center px-4">
+      <h1 class="text-xl font-bold text-pink-700">💕 Our Love Story</h1>
+      <div class="space-x-4">
+        <a href="#timeline" class="text-pink-600 hover:underline">Timeline</a>
+        <a href="#reasons" class="text-pink-600 hover:underline">Reasons</a>
+        <a href="#gallery" class="text-pink-600 hover:underline">Gallery</a>
+        <a href="#final" class="text-pink-600 hover:underline">Final 💌</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Spacer for fixed nav -->
+  <div class="h-16"></div>
+
+  <!-- Landing -->
+  <section class="my-10">
+    <h1 class="text-4xl md:text-6xl font-bold text-pink-600 animate-bounce">Happy Anniversary, My Love ❤️</h1>
+    <p class="text-lg text-gray-700 mt-4">You've survived 1826 days with me. You deserve kissies.</p>
+  </section>
+
+  <!-- Milestone Moments -->
+<section id="timeline" class="bg-white rounded-xl shadow-xl p-6 max-w-4xl mx-auto my-10">
+    <h2 class="text-3xl font-semibold text-pink-500 mb-6">Milestone Moments 💖</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div class="relative w-full h-48 perspective">
+        <div class="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d" onclick="this.classList.toggle('rotateY')">
+          <div class="absolute w-full h-full bg-pink-100 rounded-xl p-4 backface-hidden flex items-center justify-center text-center text-lg font-semibold text-pink-700">
+            💑 First Crush
+          </div>
+          <div class="absolute w-full h-full bg-pink-200 rounded-xl p-4 backface-hidden transform rotateY-180 flex items-center justify-center text-center text-sm text-pink-800">
+            Who would have thought that our love will start with a hatefulness towards me, meeting you was so chaotic but lovely at the same time.
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="relative w-full h-48 perspective">
+        <div class="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d" onclick="this.classList.toggle('rotateY')">
+          <div class="absolute w-full h-full bg-yellow-100 rounded-xl p-4 backface-hidden flex items-center justify-center text-center text-lg font-semibold text-yellow-700">
+            🍍 First Date
+          </div>
+          <div class="absolute w-full h-full bg-yellow-200 rounded-xl p-4 backface-hidden transform rotateY-180 flex items-center justify-center text-center text-sm text-yellow-800">
+            Very awkward and cute story it was, if you would not have asked we would have gone without a kiss for sure. Again a very chaotic but a lovely moment it was.
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="relative w-full h-48 perspective">
+        <div class="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d" onclick="this.classList.toggle('rotateY')">
+          <div class="absolute w-full h-full bg-purple-100 rounded-xl p-4 backface-hidden flex items-center justify-center text-center text-lg font-semibold text-purple-700">
+            🛏️ First Makeout
+          </div>
+          <div class="absolute w-full h-full bg-purple-200 rounded-xl p-4 backface-hidden transform rotateY-180 flex items-center justify-center text-center text-sm text-purple-800">
+            Who would have thought hours will fly so quick when we were making out together. A Forever memory it is !!
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    .perspective {
+      perspective: 1000px;
+    }
+    .transform-style-preserve-3d {
+      transform-style: preserve-3d;
+    }
+    .backface-hidden {
+      backface-visibility: hidden;
+    }
+    .rotateY {
+      transform: rotateY(180deg);
+    }
+    .rotateY-180 {
+      transform: rotateY(180deg);
+    }
+  </style>
+  
+  <!-- Reasons I Love You -->
+<section id="reasons" class="bg-pink-50 rounded-xl shadow-xl p-6 max-w-5xl mx-auto my-10">
+    <h2 class="text-3xl font-semibold text-red-500 text-center mb-6">Reasons I Love You ❤️</h2>
+    <div class="flex flex-wrap justify-center gap-6">
+      <div class="note bg-yellow-100">Because i like making fun of you 🤭</div>
+      <div class="note bg-pink-200">Spending time with you makes me happy  ☕</div>
+      <div class="note bg-green-100">You’re my safe place 🛡️</div>
+      <div class="note bg-purple-100">You have got some good curves 🤪</div>
+      <div class="note bg-blue-100">You remember the little things 📝</div>
+      <div class="note bg-red-100">Your hugs heal everything 🤗</div>
+      <div class="note bg-orange-100">You're the calm to my chaos 🌀</div>
+      <div class="note bg-teal-100">You're always on my team 🫶</div>
+    </div>
+  </section>
+  
+  <style>
+    .note {
+      width: 180px;
+      padding: 1rem;
+      font-size: 1rem;
+      font-weight: 500;
+      border-radius: 0.5rem;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      transform: rotate(var(--rotate));
+      transition: transform 0.3s ease;
+      cursor: default;
+    }
+    .note:hover {
+      transform: scale(1.05) rotate(0deg);
+      z-index: 10;
+    }
+  
+    /* Random rotate angles using custom properties (CSS-only way) */
+    .note:nth-child(1) { --rotate: -3deg; }
+    .note:nth-child(2) { --rotate: 4deg; }
+    .note:nth-child(3) { --rotate: -2deg; }
+    .note:nth-child(4) { --rotate: 3deg; }
+    .note:nth-child(5) { --rotate: -4deg; }
+    .note:nth-child(6) { --rotate: 2deg; }
+    .note:nth-child(7) { --rotate: -3deg; }
+    .note:nth-child(8) { --rotate: 3deg; }
+  </style>
+  
+
+  <!-- Gallery -->
+  <section id="gallery" class="my-10">
+    <h2 class="text-2xl font-semibold text-purple-500 mb-4">Our Silly Moments 📸</h2>
+    <div class="overflow-x-auto whitespace-nowrap py-2">
+      <img src="yashi2.jpg" class="inline-block rounded-xl mx-2 transform hover:scale-110 transition" height="200px" width="200px" />
+      <img src="yashi1.jpg" class="inline-block rounded-xl mx-2 transform hover:scale-110 transition" height="200px" width="200px"/>
+      <img src="yasih4.jpg" class="inline-block rounded-xl mx-2 transform hover:scale-110 transition" height="200px" width="200px"/>
+    </div>
+  </section>
+
+  <!-- Love-o-Meter -->
+  <section class="my-10">
+    <h2 class="text-2xl font-semibold text-green-500">Love-o-Meter 💘</h2>
+    <button onclick="fillMeter()" class="mt-4 px-6 py-2 bg-green-300 text-green-800 rounded-full hover:bg-green-400 transition">Check</button>
+    <div class="w-full bg-gray-200 h-6 mt-4 rounded-full overflow-hidden">
+      <div id="meter" class="bg-pink-500 h-6 w-0 transition-all duration-1000 ease-out"></div>
+    </div>
+  </section>
+
+  <!-- Final Message -->
+  <section id="final" class="my-10">
+    <h2 class="text-2xl font-semibold text-blue-500">One Last Thing 💌</h2>
+    <button onclick="showMessage()" class="mt-4 px-6 py-2 bg-blue-300 text-blue-800 rounded-full hover:bg-blue-400 transition">Click to Reveal</button>
+    <div id="finalMessage" class="mt-4 text-xl text-gray-800 hidden animate-fade-in-slow">You're the best thing that ever happened to me. Here's to many more years of love, laughter, and shared pizza. 🥰</div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-20 text-sm text-gray-600 py-4">
+    Made with ❤️ by Ansh | Forever & Always 
+  </footer>
+
+  <script>
+    // Days calculator
+    const startDate = new Date('2020-01-01');
+    const today = new Date();
+    const diffTime = Math.abs(today - startDate);
+    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+    document.getElementById('days').textContent = diffDays;
+
+    // Timeline toggle
+    function toggleDetail(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle('hidden');
+      gsap.fromTo(el, { opacity: 0 }, { opacity: 1, duration: 0.5 });
+    }
+
+    // Love meter
+    function fillMeter() {
+      document.getElementById('meter').style.width = '100%';
+    }
+
+    // Final message
+    function showMessage() {
+      const msg = document.getElementById('finalMessage');
+      msg.classList.remove('hidden');
+      gsap.fromTo(msg, { opacity: 0 }, { opacity: 1, duration: 1 });
+    }
+  </script>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTop" class="fixed bottom-6 right-6 bg-pink-500 text-white p-3 rounded-full shadow-lg hidden hover:bg-pink-600 transition">
+    ↑
+  </button>
+  
+  <script>
+  
+    // Scroll to top logic
+    const scrollBtn = document.getElementById("scrollTop");
+    window.addEventListener("scroll", () => {
+      scrollBtn.style.display = window.scrollY > 200 ? 'block' : 'none';
+    });
+    scrollBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  
+    // Floating balloons 🎈
+    for (let i = 0; i < 15; i++) {
+      const balloon = document.createElement("div");
+      balloon.textContent = "🎈";
+      balloon.style.position = "absolute";
+      balloon.style.left = Math.random() * 100 + "vw";
+      balloon.style.bottom = Math.random() * -100 + "px";
+      balloon.style.fontSize = Math.random() * 20 + 20 + "px";
+      document.body.appendChild(balloon);
+      gsap.to(balloon, {
+        y: "-110vh",
+        repeat: -1,
+        delay: Math.random() * 5,
+        duration: 20,
+        ease: "linear"
+      });
+    }
+  </script>
+  
+</body>
+</html>
